@@ -1,71 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  max-width: 1512px;
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.page-container {
+    max-width: 1512px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 100px;
-  background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 110px;
+    background-color: white;
+    height: 130px;
+    box-sizing: border-box;
 }
 
+
 .logo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
 }
 
 .logo img {
-  height: 60px;
+    height: 76px;
+    display: block;
 }
 
 .nav-links {
-  display: flex;
-  gap: 40px; 
-  margin-left: 20px; 
-  align-items: center;
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    height: 100%;
 }
 
 .nav-links a {
-  display: inline-block;
-  background-color: white;
-  color: black;
-  padding: 8px 20px;
-  border-radius: 17px;
-  text-decoration: none;
-  font-weight: 400;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border: 1px solid transparent;
-  cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    height: 43px;
+    box-sizing: border-box;
 }
 
 .nav-links a:hover {
-  background-color: #5ebd3e;
-  color: white;
-  border-color: #5ebd3e;
+    background-color: #5ebd3e;
+    color: white;
+}
+
+.nav-links a:active {
+    background-color: #488f31;
+    color: white;
 }
 
 .header-icons {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 5px;
 }
 
 .header-icons .icon {
-  background-color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 8px;
-  margin-left: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: none;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
 }
 
 .header-icons .icon i {
-  color: #5ebd3e;
-  font-size: 20px;
+    color: #5ebd3e;
+    font-size: 20px;
 }
