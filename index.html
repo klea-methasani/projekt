@@ -2,63 +2,124 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Almsed Projekt</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <script src="https://unpkg.com/lucide@latest"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Almsed Projekt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Reem+Kufi+Fun:wght@400..700&display=swap"
+    rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
-    <div class="page-container">
-        <header class="site-header">
-            <div class="hamburger-menu" id="hamburgerMenu">
-                <i data-lucide="menu"></i>
-            </div>
+  <div class="page-container">
+    <header class="site-header">
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <i data-lucide="menu"></i>
+      </div>
 
+      <div class="site-logo">
+        <img src="Almased_Logo.png" alt="Header Image" />
+      </div>
 
-            <div class="site-logo">
-                <img src="Almased_Logo.png" alt="Header Image" />
-            </div>
-
-
-            <nav class="desktop-nav">
-                <a href="#" class="nav-item shop-link">SHOP</a>
-                <a href="#" class="nav-item">About Almased</a>
-                <a href="#" class="nav-item">Science</a>
-                <a href="#" class="nav-item">Results</a>
-                <a href="#" class="nav-item">Health Goals</a>
-                <a href="#" class="nav-item">How to Use</a>
-                <a href="#" class="nav-item">Learn</a>
-            </nav>
-
-
-            <div class="header-icons">
-                <i class="ri-search-line"></i>
-                <i class="ri-user-line"></i>
-                <i class="ri-shopping-cart-2-line"></i>
-            </div>
-        </header>
-    </div>
-
-
-    <nav class="mobile-nav" id="mobileMenu">
-        <a href="#" class="nav-item">SHOP</a>
+      <nav class="desktop-nav">
+        <a href="#" class="nav-item shop-link">SHOP</a>
         <a href="#" class="nav-item">About Almased</a>
         <a href="#" class="nav-item">Science</a>
         <a href="#" class="nav-item">Results</a>
         <a href="#" class="nav-item">Health Goals</a>
         <a href="#" class="nav-item">How to Use</a>
         <a href="#" class="nav-item">Learn</a>
-    </nav>
+      </nav>
 
-    <script src="skripti.js" defer></script>
-    <script>
-        window.addEventListener("DOMContentLoaded", () => {
-            lucide.createIcons();
-        });
-    </script>
+      <div class="header-icons">
+        <i class="ri-search-line"></i>
+        <i class="ri-user-line"></i>
+        <i class="ri-shopping-cart-2-line"></i>
+      </div>
+    </header>
+  </div>
+
+  <nav class="mobile-nav" id="mobileMenu">
+    <a href="#" class="nav-item">SHOP</a>
+    <a href="#" class="nav-item">About Almased</a>
+    <a href="#" class="nav-item">Science</a>
+    <a href="#" class="nav-item">Results</a>
+    <a href="#" class="nav-item">Health Goals</a>
+    <a href="#" class="nav-item">How to Use</a>
+    <a href="#" class="nav-item">Learn</a>
+  </nav>
+
+
+  <section class="hero-section">
+    <div class="hero-slider">
+      <!-- Slide i pare -->
+      <div class="hero-slide active" style="background-image: url('hero-image1.png');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>Natural<br>Superfood<br>Protein</h2>
+            <p>for optimal health</p>
+            <a href="#" class="cta-btn">Start Almased today →</a>
+          </div>
+          <div class="hero-benefits">
+            <div class="circle"><span class="big">24g</span><span class="small">high-quality<br>protein</span></div>
+            <div class="circle"><span class="big">80</span><span class="small">bioactive<br>peptides</span></div>
+            <div class="circle"><span class="big">20</span><span class="small">amino<br>acids</span></div>
+            <div class="circle"><span class="big">22</span><span class="small">vitamins<br>& minerals</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide i dyte-->
+      <div class="hero-slide" style="background-image: url('hero-image2.png');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>Natural<br>Superfood<br>Protein</h2>
+            <p>for optimal health</p>
+            <a href="#" class="cta-btn">Start Almased today →</a>
+          </div>
+          <div class="hero-benefits">
+            <div class="circle"><span class="big">24g</span><span class="small">high-quality<br>protein</span></div>
+            <div class="circle"><span class="big">80</span><span class="small">bioactive<br>peptides</span></div>
+            <div class="circle"><span class="big">20</span><span class="small">amino<br>acids</span></div>
+            <div class="circle"><span class="big">22</span><span class="small">vitamins<br>& minerals</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="hero-slide" style="background-image: url('hero-image3.png');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>Natural<br>Superfood<br>Protein</h2>
+            <p>for optimal health</p>
+            <a href="#" class="cta-btn">Start Almased today →</a>
+          </div>
+          <div class="hero-benefits">
+            <div class="circle"><span class="big">24g</span><span class="small">high-quality<br>protein</span></div>
+            <div class="circle"><span class="big">80</span><span class="small">bioactive<br>peptides</span></div>
+            <div class="circle"><span class="big">20</span><span class="small">amino<br>acids</span></div>
+            <div class="circle"><span class="big">22</span><span class="small">vitamins<br>& minerals</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="skripti.js" defer></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+    });
+  </script>
 </body>
 
 </html>
