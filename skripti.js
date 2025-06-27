@@ -44,14 +44,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
   tabButtons.forEach(button => {
     button.addEventListener("click", () => {
-      // Remove active state from all tabs and contents
+
       tabButtons.forEach(btn => btn.classList.remove("active"));
       tabContents.forEach(content => content.classList.remove("active"));
 
-      // Add active class to clicked tab and its content
+
       button.classList.add("active");
       const targetId = button.getAttribute("data-tab");
       document.getElementById(targetId).classList.add("active");
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburgerMenu");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburger.addEventListener("click", function () {
+    mobileMenu.classList.toggle("active");
+  });
+
+  const navLinks = mobileMenu.querySelectorAll(".nav-item");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
     });
   });
 });
