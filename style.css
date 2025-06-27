@@ -11,7 +11,7 @@ body {
   line-height: 1;
   letter-spacing: 0.02em;
   background: #fff;
-  color: #000;
+  color: #0d0101;
 }
 
 .page-container {
@@ -300,6 +300,7 @@ body {
   padding: 2rem 1rem;
   margin: 1rem 6rem 0 6rem;
   border-radius: 1rem;
+  gap:1rem;
 }
 
 .benefit-item {
@@ -319,9 +320,9 @@ body {
 
 .benefit-item span {
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 1rem;
-  ;
+  padding:2rem 2rem 0rem 2rem;
 }
 
 .welcome-image {
@@ -388,7 +389,6 @@ body {
   position: relative;
   z-index: 2;
   transform: translateY(3rem);
-  /* sits on top */
 }
 
 
