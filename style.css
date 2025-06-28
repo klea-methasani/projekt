@@ -182,40 +182,47 @@ body {
 
 .circle .big {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 .circle .small {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   line-height: 1.1;
 }
 
-
+.circle .big #letter{
+  font-size: 2rem;
+  font-weight: 500;
+}
 
 .tabbed-section {
-  padding: 4rem 2rem;
+  padding: 1.3rem 2rem 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .tab-list {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 4.5rem;
 }
 
 .tab-button {
-  padding: 0.7rem 1.5rem;
+  padding: 1rem 3.2rem;
   font-size: 1rem;
+  font-weight: 200;
   border: 2px solid #ccc;
-  border-radius: 2rem;
+  border-radius: 0.7rem;
+  text-align: left;
   background-color: white;
   color: #333;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 
 .tab-button:hover {
   background-color: #5ebd3e;
@@ -362,11 +369,7 @@ body {
   font-weight: 300;
 }
 
-.tab-button {
-  font-size: 0.9rem;
-  padding: 0.6rem 1.2rem;
-  font-weight: 200;
-}
+
 
 .welcome-image img {
   max-width: 200px;
@@ -489,6 +492,10 @@ body {
     font-size: 1.4rem;
   }
 
+  .circle .big #letter{
+  font-size: 1rem;
+}
+
   .circle .small {
     font-size: 0.7rem;
     text-align: center;
@@ -538,6 +545,9 @@ body {
     padding: 0.9rem 1.3rem;
   }
 
+  .benefit-item{
+    padding: 1rem;
+  }
   #welcome-pack .benefits-grid .benefit-item p {
     font-size: 0.7rem;
   }
