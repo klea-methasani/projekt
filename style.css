@@ -204,14 +204,14 @@ body {
 
 .tab-list {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.1rem;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 4.5rem;
 }
 
 .tab-button {
-  padding: 1rem 3.2rem;
+  padding: 1rem 3rem;
   font-size: 1rem;
   font-weight: 200;
   border: 2px solid #ccc;
@@ -484,6 +484,26 @@ body {
 }
 
 
+.testimonial-slider {
+  position: relative;
+  width: 100%;
+}
+
+.testimonial-slide {
+  display: none;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.testimonial-slide.active {
+  display: flex;
+}
+
+
+
+
+
+
 @keyframes fade {
   from {
     opacity: 0;
@@ -702,5 +722,10 @@ body {
     width: 100%;
     height: auto;
   }
+
+
+
+
+ 
 }
 
