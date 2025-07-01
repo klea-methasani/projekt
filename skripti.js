@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".hero-slide");
   const slider = document.querySelector(".hero-slider");
@@ -103,7 +104,78 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  showSlide(current); 
+  showSlide(current);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.getElementById("benefitsSlider");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  const slideWidth = slider.querySelector(".slide").offsetWidth + 16; 
+  const totalSlides = slider.querySelectorAll(".slide").length;
+  const maxScroll = slideWidth * (totalSlides - 1);
+  let currentScroll = 0;
+
+  nextBtn.addEventListener("click", () => {
+    currentScroll = Math.min(currentScroll + slideWidth, maxScroll);
+    slider.scrollTo({ left: currentScroll, behavior: "smooth" });
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentScroll = Math.max(currentScroll - slideWidth, 0);
+    slider.scrollTo({ left: currentScroll, behavior: "smooth" });
+  });
+});
+
+
+//skripti bareve i sakti
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.getElementById("benefitsSlider");
+  const slides = slider.querySelectorAll(".slide");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const dots = document.querySelectorAll("#progressIndicator .dot");
+
+  const slideWidth = slides[0].offsetWidth + 16;
+  let currentIndex = 0;
+
+  function updateSliderPosition() {
+    slider.scrollTo({
+      left: currentIndex * slideWidth,
+      behavior: "smooth",
+    });
+    updateDots();
+  }
+
+  function updateDots() {
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === currentIndex);
+    });
+  }
+
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < slides.length - 1) {
+      currentIndex++;
+      updateSliderPosition();
+    }
+  });
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSliderPosition();
+    }
+  });
+
+
+  slider.addEventListener("scroll", () => {
+    const index = Math.round(slider.scrollLeft / slideWidth);
+    if (index !== currentIndex) {
+      currentIndex = index;
+      updateDots();
+    }
+  });
 });
 
 

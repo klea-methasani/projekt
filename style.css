@@ -501,6 +501,248 @@ body {
 
 
 
+.benefits-slider-section {
+  text-align: center;
+  background: #f8f1ee;
+  padding: 4rem 1rem 13rem 1rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.slider-title {
+  color: #238014;
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+font-weight: 300;
+font-size: 60px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+
+.slider-container {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.5s ease;
+  overflow: hidden; 
+  scroll-behavior: smooth;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.slide {
+  position: relative;
+  min-width: 400px;
+  max-width: 400px;
+  background: #5ebd3e;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  
+}
+
+.slide-image {
+  position: relative;
+  background-color: #f8f1ee;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: fit-content !important;
+  
+}
+
+.slide-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transform: translateY(4px);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.plus-button {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-color: #5ebd3e;
+    color: white;
+    border: none;
+    border-radius: 20%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.slide-content {
+  background: #5ebd3e;
+  color: white;
+  text-align: left;
+  padding: 1.1rem;
+  position: relative;
+}
+
+.slide-content h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+    font-family: Helvetica Neue LT Std;
+
+}
+
+.slide-content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+#arrow-left,
+#arrow-right{
+  border: none;
+  background-color: transparent;
+}
+
+.slider-arrow {
+  font-size: 2rem;
+  border: none;
+  background: #5ebd3e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  margin: 0 1rem;
+}
+
+#prevBtn{
+  color: #5ebd3e;
+  background-color: #f8f1ee;
+  border: 2px solid #5ebd3e;
+  width:86px;
+  height:86px;
+  margin: 0;
+}
+
+#nextBtn{
+  background-color:#238014;
+   width:86px;
+  height:86px;
+}
+
+
+.progress-indicator {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+
+
+
+.dot {
+  width: 260px;
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: #ffffff;
+}
+
+.bottom-arrows{
+  float: right;
+  padding: 2.5rem;
+}
+
+
+
+.metabolic-health-section {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 6rem 1.4rem;
+  color: #333;
+}
+
+.metabolic-health-section .title {
+  color: #238014;
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.stat-circle {
+  border: 2px solid #4CAF50;
+  border-radius: 50%;
+  padding: 30px;
+  width: 320px;
+  height: 320px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-circle h3 {
+  color: #4CAF50;
+  font-size: 4rem;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.stat-circle p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #5ebd3e;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 3.5rem;
+  line-height: 1.5;
+}
+
+.research-button {
+  background-color: #5ebd3e;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.research-button:hover {
+  background-color: #45a049;
+}
+
+
 
 
 
@@ -723,9 +965,114 @@ body {
     height: auto;
   }
 
+.benefits-slider-section {
+    padding: 2rem 1rem 6rem 1rem;
+  }
+
+  .slider-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding: 0 1rem;
+  }
+
+  .slider-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .slider-container {
+    margin: 0;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slide {
+    min-width: 250px;
+    max-width: 90%;
+    margin: 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .slide-image img {
+    height: 220px;
+  }
+
+  .plus-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    top: 10px;
+    right: 10px;
+  }
+
+  .slide-content {
+    padding: 1rem;
+  }
+
+  .slide-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .slide-content p {
+    font-size: 0.85rem;
+  }
+
+  .slider-arrow {
+    display: none; 
+  }
+
+  .progress-indicator {
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .dot {
+    width: 100%;
+    max-width: 35px;
+    height: 4px;
+  }
+
+  .bottom-arrows {
+    float: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  #prevBtn, #nextBtn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+  }
 
 
 
- 
+  .stat-circle {
+    width: 140px;
+    height: 140px;
+    padding: 20px;
+  }
+
+  .stat-circle h3 {
+    font-size: 24px;
+  }
+
+  .stat-circle p {
+    font-size: 14px;
+  
 }
+
+.metabolic-health-section .title {
+  font-size: 2.5rem;
+}
+}
+
 
