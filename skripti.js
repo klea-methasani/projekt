@@ -180,3 +180,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".testimonial2-content");
+  const leftArrows = document.querySelectorAll(".arrow-left-2");
+  const rightArrows = document.querySelectorAll(".arrow-right-2");
+
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+
+  leftArrows.forEach(arrow => {
+    arrow.addEventListener("click", () => {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    });
+  });
+
+  rightArrows.forEach(arrow => {
+    arrow.addEventListener("click", () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    });
+  });
+
+  showSlide(current);
+});
