@@ -88,7 +88,7 @@ body {
 }
 
 .heroslide img {
-  height: 90vh;
+  height: 100vh;
 
 }
 
@@ -160,7 +160,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: flex-end;
+  justify-content:center;
   align-items: center;
   margin-bottom: 5rem;
 }
@@ -202,7 +202,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 5px;
   z-index: 5;
 }
 
@@ -224,13 +224,13 @@ body {
   bottom: 35px;
   right: 35px;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: transparent;
   border: 2px solid white;
   border-radius: 50%;
   color: white;
-  font-size: 1.2rem;
-  width: 40px;
-  height: 40px;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
