@@ -1,43 +1,62 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".hero-slide");
-  const slider = document.querySelector(".hero-slider");
+  const dots = document.querySelectorAll(".dot-hero");
+  const toggleBtn = document.getElementById("carouselToggle");
+
   let currentIndex = 0;
   let interval;
-
+  let isPlaying = true;
 
   function showSlide(index) {
     slides.forEach((slide, i) => {
       slide.classList.toggle("active", i === index);
     });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
   }
 
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
 
   function startCarousel() {
-    interval = setInterval(() => {
-      currentIndex = (currentIndex + 1) % slides.length;
-      showSlide(currentIndex);
-    }, 5000);
+    clearInterval(interval);
+    interval = setInterval(nextSlide, 5000);
+    isPlaying = true;
+    toggleBtn.textContent = "⏸"; 
   }
-
 
   function pauseCarousel() {
     clearInterval(interval);
+    isPlaying = false;
+    toggleBtn.textContent = "▶"; 
   }
 
-
-  function resumeCarousel() {
-    startCarousel();
-  }
+  toggleBtn.addEventListener("click", () => {
+    if (isPlaying) {
+      pauseCarousel();
+    } else {
+      startCarousel();
+    }
+  });
 
 
   showSlide(currentIndex);
   startCarousel();
-
-
-  slider.addEventListener("mouseenter", pauseCarousel);
-  slider.addEventListener("mouseleave", resumeCarousel);
 });
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const tabButtons = document.querySelectorAll(".tab-button");
