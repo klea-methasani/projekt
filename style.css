@@ -1508,9 +1508,7 @@ text-align: center;
     padding: 0.9rem 1.25rem;
   }
 
-  .benefit-item {
-    padding: 1rem;
-  }
+ 
 
 #welcome-pack .benefits-grid .benefit-text-2{
     margin-bottom: 2rem;
@@ -1602,6 +1600,10 @@ height: auto;  }
 .benefits-slider-section {
     padding: 2rem 1rem 6rem 1rem;
   }
+
+  .benefit-item {
+        padding: 0.8rem;
+    }
 
   .slider-title {
     font-size: 1.8rem;
@@ -1705,8 +1707,8 @@ height: auto;  }
 }
 
 .metabolic-health-section .title {
-  font-size: 2.5rem;
-}
+font-size: 2.3rem;
+    }
 
 .description{
   font-size: 0.8rem;
@@ -1930,7 +1932,7 @@ height: auto;  }
   }
 
   .newsletter-form input[type="email"] {
-    width: 100%;
+    width: 82%;
     max-width: 100%;
     font-size: 1rem;
   }
