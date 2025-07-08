@@ -1,9 +1,16 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ 
 }
 
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
 body {
   font-family: 'Outfit', sans-serif;
   font-size: 1.125rem;
@@ -485,7 +492,7 @@ body {
   font-family: 'Outfit', sans-serif;
 
   margin-bottom: 2rem;
-  color: #238014;
+  color: #409E31;
 }
 
 .story-button {
@@ -721,7 +728,7 @@ text-align: center;
 .metabolic-health-section .title {
   color: #238014;
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 200;
   margin-bottom: 40px;
 }
 
@@ -1180,7 +1187,7 @@ text-align: center;
   padding: 1rem 2.5rem;
   font-size: 1rem;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -1297,7 +1304,7 @@ text-align: center;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -1313,6 +1320,7 @@ text-align: center;
 
 .footer-column ul {
   list-style: none;
+  padding: 0;
 }
 
 .footer-column ul li {
@@ -1397,7 +1405,7 @@ text-align: center;
   }
 
   .hero-text h2 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 
   .hero-text p {
@@ -1415,13 +1423,14 @@ text-align: center;
   .hero-benefits {
     justify-content: center;
     flex-wrap: wrap;
-    row-gap: 0.1rem;
+    row-gap: 0.3rem;
     margin-bottom: 2rem;
   }
 
   .circle {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
+    padding: 0;
   }
 
   .circle .big {
@@ -1437,6 +1446,15 @@ text-align: center;
     text-align: center;
   }
 
+  .carousel-toggle {
+
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .hero-indicators{
+    bottom: 10px;
+  }
   .welcome-box {
     flex-direction: column;
     align-items: flex-start;
@@ -1984,9 +2002,7 @@ height: auto;  }
     text-align: left;
   }
 
-  .hero-text h2 {
-    font-size: 2.6rem;
-  }
+ 
 
   .hero-text p {
     font-size: 1.3rem;
@@ -2004,10 +2020,9 @@ height: auto;  }
     margin-bottom: 2rem;
   }
 
-  .circle {
-    width: 120px;
-    height: 120px;
-  }
+     .circle {
+        width: 110px;
+        height: 110px;
 
   .circle .big {
     font-size: 1.5rem;
@@ -2079,4 +2094,27 @@ height: auto;  }
   .footer-column ul li a {
     font-size: 1rem;
   }
+}}
+
+
+@media (min-width: 412px) and (max-width: 431px) {
+ .circle{
+    width: 130px;
+    height: 130px;
+  }
+  .hero-benefits{
+    row-gap: 2rem;
+  }
+  .cta-btn{
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 768px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  
 }
