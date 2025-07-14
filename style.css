@@ -21,7 +21,7 @@ body {
   color: #0d0101;
 }
 
-.page-container {
+.header-menu {
   max-width: 84.375rem;
   margin: 0 auto;
   padding: 1.5rem 0;
@@ -31,7 +31,6 @@ body {
 .site-header {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
   padding: 0.3125rem;
   background-color: white;
   position: relative;
@@ -207,7 +206,6 @@ body {
   position: absolute;
   bottom: 40px;
   left: 50%;
-  transform: translateX(-50%);
   display: flex;
   gap: 5px;
   z-index: 5;
@@ -343,10 +341,6 @@ body {
   background: #56ad39;
 }
 
-.welcome-image {
-  flex: 1 1 300px;
-  text-align: center;
-}
 
 .welcome-image img {
   max-width: 100%;
@@ -387,6 +381,8 @@ body {
 }
 
 .welcome-image {
+  flex: 1 1 300px;
+  text-align: center;
   position: relative;
   width: 100%;
   display: flex;
